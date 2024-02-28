@@ -68,16 +68,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "test-coverage": "npm run test -- --coverage --coverageDirectory=output/coverage/jest --watchAll=false"
-  },
-   "jest": {
-    "transform": {
-      "^.+\\.(js|jsx)$": "babel-jest"
-    },
-    "coverageReporters": [
-      "text",
-      "cobertura"
-    ]
+    "test:report": "jest --reporters=default --reporters=jest-html-reporters"
   },
   "eslintConfig": {
     "extends": [
@@ -114,6 +105,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^27.5.1",
+    "jest-html-reporters": "^3.1.7",
     "prettier": "^2.8.7"
   }
 }
